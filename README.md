@@ -59,3 +59,11 @@ src/
 ## Publicar
 
 Genera `dist/` con `npm run build` y súbelo a Cloudflare Pages, Netlify o Vercel como aplicación estática. Este portfolio no necesita backend ni router.
+
+## SEO
+
+- `npm run build` prerenderiza el HTML (`src/entry-server.tsx` + `scripts/prerender.mjs`): el contenido está en `dist/index.html` sin ejecutar JavaScript, y React lo sustituye al cargar.
+- Título, descripción, Open Graph y Twitter en `index.html`. El `h1` lleva el nombre completo (`Hero.tsx`). Imagen para compartir: `public/og-image.png` (1200×630).
+- Datos estructurados JSON-LD (`Person` con `alternateName`, y `SoftwareApplication` para Atenea y Hércules) en `buildJsonLd`, dentro de `src/entry-server.tsx`.
+- **Cuando haya dominio**, compila con `SITE_URL`: `SITE_URL=https://tu-dominio.tld npm run build` (en PowerShell: `$env:SITE_URL='https://tu-dominio.tld'; npm run build`; en Cloudflare/Netlify/Vercel, como variable de entorno). Añade el canonical, `og:url`, las imágenes absolutas, `sitemap.xml` y la línea `Sitemap` de `robots.txt`. Sin `SITE_URL` no se genera nada de eso, para no publicar URLs falsas.
+- Después de publicar: verificar el sitio en Google Search Console y Bing Webmaster, enviar el sitemap y enlazar la web desde GitHub, Ko-fi y atenea.sbs.

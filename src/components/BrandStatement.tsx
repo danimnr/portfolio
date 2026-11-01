@@ -17,7 +17,7 @@ export function BrandStatement() {
       <div className="manifest">
         <Reveal delay={80}><div>
           <span className="brand-line">D.A.S. <small>Interactive Software</small></span>
-          <p className="manifest-lead">Fundé <strong>D.A.S. Interactive Software</strong> con una idea sencilla: crear software autónomo, rápido y realmente útil. Sin complejidad innecesaria, sin comprometer la privacidad y sin suscripciones abusivas.</p>
+          <p className="manifest-lead">Soy <strong>Daniel Agud Sorli</strong> (Dani Agud), estudiante de Ingeniería Informática en la Universidad de Zaragoza. Fundé <strong>D.A.S. Interactive Software</strong> con una idea sencilla: crear software autónomo, rápido y realmente útil, como <strong>Atenea</strong>, <strong>Nubemita</strong>, <strong>Hércules</strong> y <strong>FotoFlix</strong>. Sin complejidad innecesaria, sin comprometer la privacidad y sin suscripciones abusivas.</p>
           <a className="text-link" href="#proyectos">ver lo que estoy construyendo <ArrowUpRight size={16} /></a>
         </div></Reveal>
         <ul className="values">{values.map((value, index) => <li key={value.title}><Reveal delay={index * 80}><div className="value"><span className="value-idx">0{index + 1}</span><div><h3>{value.title}</h3><p>{value.desc}</p></div></div></Reveal></li>)}</ul>

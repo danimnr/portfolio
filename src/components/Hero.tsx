@@ -42,8 +42,8 @@ export function Hero() {
     <div className="wrap hero-layout">
       <div>
         <p className="prompt mono anim-enter" style={{ animationDelay: '40ms' }}><Typed text="whoami" reduce={reduce} /></p>
-        <p className="whoami-out anim-enter" style={{ animationDelay: '600ms' }}>Daniel Agud Sorli · Desarrollador de software · Zaragoza</p>
-        <h1 className="hero-title anim-enter" style={{ animationDelay: '700ms' }}>Ideas que se convierten en <span className="hl">producto</span>.<span className="caret" aria-hidden="true" /></h1>
+        <h1 className="whoami-out anim-enter" style={{ animationDelay: '600ms' }}>Daniel Agud Sorli (Dani Agud) · Desarrollador de software · Zaragoza</h1>
+        <p className="hero-title anim-enter" style={{ animationDelay: '700ms' }}>Ideas que se convierten en <span className="hl">producto</span>.<span className="caret" aria-hidden="true" /></p>
         <p className="hero-intro anim-enter" style={{ animationDelay: '820ms' }}>Del bajo nivel con <strong>Rust y C++</strong> a experiencias cuidadas con <strong>React y Flutter</strong>. Diseño, desarrollo y publico productos de principio a fin.</p>
         <div className="roles anim-enter" style={{ animationDelay: '900ms' }}>
           <span className="gt">&gt;</span>
