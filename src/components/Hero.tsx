@@ -27,7 +27,6 @@ const info: [string, string][] = [
   ['empresa', 'D.A.S. Interactive Software'],
   ['lenguajes', languages.join(', ')],
   ['proyectos', String(projects.length)],
-  ['lema', 'De la idea a la tienda'],
 ];
 
 export function Hero() {
