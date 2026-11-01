@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Notas internas de traspaso (no forman parte de la web)
+LEEME_PORTFOLIO_DANIMNR_ESTADO_Y_PENDIENTES.txt

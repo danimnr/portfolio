@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Daniel Agud Sorli (danimnr). Ingeniería de software, aplicaciones de escritorio, móvil y web. Fundador de D.A.S. Interactive Software." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daniel Agud Sorli — Software Engineer" />
+    <meta property="og:description" content="De la idea al producto. Software de extremo a extremo con diseño, rendimiento y privacidad." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        let saved = null;
+        try { saved = localStorage.getItem('das-theme'); } catch (_) { /* LocalStorage can be blocked by privacy settings. */ }
+        const dark = saved === 'dark' || (saved !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0b0e13' : '#ffffff');
+      })();
+    </script>
+    <title>Daniel Agud Sorli — danimnr</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
